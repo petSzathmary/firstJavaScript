@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="firstJS_CSS.css">
+	</head>
+	<body>
+		<center><table>
+			<tr>
+				<td>Name</td>
+				<td><input id="nameFirst" type="text"></td>
+			<tr/>
+			<tr>
+				<td>Surname</td>
+				<td><input id="nameLast" type="text"></td>
+			<tr/>
+			<tr>
+				<td><input type="reset" value="RESET"></td>
+				<td><input id="nameClick" type="submit" value="OK" onclick="showAlert()"></td>
+				<script>
+					function showAlert()
+					{
+						var name = document.getElementById("nameFirst").value;
+						var surname = document.getElementById("nameLast").value;
+						
+						console.log(name);
+						
+						alert("Hello, " + name + " " + surname + "!");
+						
+						name = document.getElementById("nameFirst").style.color='blue';
+						surname = document.getElementById("nameLast").style.color='green';
+						
+						console.log("number of letters in name: ", name.length);
+						console.log("number of letters in surname: ", surname.length);
+						console.log("sum of letter in name and surname: ", name.length + surname.length);
+						
+						document.getElementById("Meee").innerHTML = "Szathmáry Peter";
+						document.getElementById("Meee").style.color="white";
+						document.getElementById("Meee").style.fontFamilyamily="Courier New";
+						document.getElementById("Meee").style.fontSize='25px';
+						document.getElementById("Meee").style.textAlign="center";
+						document.getElementById("Meee").style.border="4px solid orange";
+						document.getElementById("Meee").style.backgroundColor="black";
+						document.getElementById("Meee").style.padding="5px";
+						document.getElementById("Meee").style.marginLeft="40%";
+						document.getElementById("Meee").style.marginRight="40%";
+						document.getElementById("Meee").style.borderRadius="10px";
+						
+						document.getElementById("message").innerHTML = " exit exit exit exi exit exit exit exi exit exit exit exi exit exit exit exi";
+						document.getElementById("message").style.textAlign="center";
+					}
+				</script>
+			<tr/>
+		</table></center>
+		
+		<p id="Meee">Peter Szathmáry</p>
+		<br />
+		<div id="message"></div>
+	</body>
+</html>
